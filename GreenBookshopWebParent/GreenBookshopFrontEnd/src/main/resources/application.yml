@@ -1,0 +1,40 @@
+logging:
+  file:
+    name: GreenBookshop-frontend.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: GreenBookshop-frontend-%d{yyyy-MM-dd}.%i.log
+      max-file-size: 100KB
+      max-history: 2
+      total-size-cap: 1MB
+server:
+  port: 8082
+  servlet:
+    context-path: /GreenBookshop
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+spring:
+  datasource:
+    password: Mysql@123
+    url: jdbc:mysql://localhost:3306/greenbs_improve?serverTimezone=UTC
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+    show-sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 536523972422-fpgg493oop86ggukhta6c8qr7rgusik1.apps.googleusercontent.com
+            client-secret: du_845-714EMVOz4zeB90d89
+            scope:
+            - email
+            - profile        

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="content" th:remove="tag">
+	<div>
+		<p>
+			[[#{settings.province.title}]]
+		</p>
+	</div>
+	<div>
+		<input type="button" th:value="#{settings.province.loadprovince}" id="buttonLoadProvinces" class="btn btn-primary m-2" />
+	</div>
+	<div>
+		<select class="form-control m-2" style="height: 300px" size="3" id="dropDownProvinces">
+		</select>
+	</div>
+	
+	<form id="formProvince">
+		<div class="form-group row ml-2">
+			<label class="col-form-label mt-2" id="labelProvinceName">[[#{settings.province.provincename}]]</label>
+			<div class="col-md">
+				<input type="text" class="form-control mt-2" id="fieldProvinceName" required minlength="3" maxlength="45"/>
+			</div>
+			<label class="col-form-label mt-2">[[#{settings.province.provincecode}]]</label>
+			<div class="col-md">
+				<input type="text" class="form-control mt-2" id="fieldProvinceCode" required minlength="3" maxlength="45"/>
+			</div>	
+			<div class="col-lg-4 mt-2">
+				<input type="button" id="buttonAddProvince" th:value="#{settings.province.newButton}" class="btn btn-secondary mr-2" />
+				<input type="button" id="buttonUpdateProvince" th:value="#{settings.province.updateButton}" class="btn btn-secondary mr-2" disabled="disabled" />
+				<input type="button" id="buttonDeleteProvince" th:value="#{settings.province.deleteButton}" class="btn btn-secondary" disabled="disabled" />
+			</div>	
+		</div>
+	</form>
+	
+</div>
+</body>
+</html>
+

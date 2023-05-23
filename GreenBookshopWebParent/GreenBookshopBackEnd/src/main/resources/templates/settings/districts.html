@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div th:fragment="content" th:remove="tag">
+	<div>
+		<p>
+			[[#{settings.district.districtsortownships}]]
+		</p>
+	</div>
+	<div>
+		<input type="button" th:value="#{settings.province.loadprovince}" id="buttonLoadProvincesForDistricts" class="btn btn-primary m-2" />
+	</div>
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">[[#{settings.district.selectedprovince}]]</label>
+		<div class="col-sm-10">
+			<select class="form-control m-2" id="dropDownProvincesForDistricts">
+			</select>
+		</div>
+	</div>
+	<div class="form-group row">
+		<label class="col-sm-2 col-form-label">[[#{settings.district.alldistrictsortownships}]]</label>
+		<div class="col-sm-10">
+			<select class="form-control m-2" style="height: 300px" size="3" id="dropDownDistricts">
+			</select>
+		</div>
+	</div>	
+	
+	<form id="formDistrict">
+		<div class="form-group row">
+			<label class="col-sm-2 col-form-label mt-2" id="labelDistrictName">[[#{settings.district.districtortownshipname}]]</label>
+			<div class="col-sm-6">
+				<input type="text" class="form-control mt-2" id="fieldDistrictName"
+				required minlength="3" maxlength="45" />
+			</div>	
+			<div class="col-lg-4 mt-2">
+				<input type="button" id="buttonAddDistrict" th:value="#{settings.district.districtnewButton}" class="btn btn-secondary mr-2" />
+				<input type="button" id="buttonUpdateDistrict" th:value="#{settings.district.districtupdateButton}" class="btn btn-secondary mr-2" disabled="disabled" />
+				<input type="button" id="buttonDeleteDistrict" th:value="#{settings.district.districtdeleteButton}" class="btn btn-secondary" disabled="disabled" />
+			</div>	
+		</div>
+	</form>
+</div>
+</body>
+</html> 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/GreenBookshopCommon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GreenBookshopWebParent/GreenBookshopBackEnd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GreenBookshopWebParent/GreenBookshopFrontEnd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GreenBookshopWebParent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GreenBookshopWebParent/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeCommon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeCommon/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeWebParent/ShopmeBackEnd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeWebParent/ShopmeBackEnd/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeWebParent/ShopmeFrontEnd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeWebParent/ShopmeFrontEnd/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeWebParent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ShopmeWebParent/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
